@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:food_delivery_app/core/assets/app_images.dart';
 
 class SplashViewBody extends StatelessWidget {
   const SplashViewBody({super.key});
@@ -12,12 +13,12 @@ class SplashViewBody extends StatelessWidget {
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
-            children: [SvgPicture.asset("assets/images/Ellipse 1005.svg")],
+            children: [SvgPicture.asset(AppImages.a1)],
           ),
-          Center(child: SvgPicture.asset("assets/images/Logo.svg")),
+          Center(child: SvgPicture.asset(AppImages.logo)),
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
-            children: [SvgPicture.asset("assets/images/Ellipse 1006.svg")],
+            children: [SvgPicture.asset(AppImages.a2)],
           ),
         ],
       ),
