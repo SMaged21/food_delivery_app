@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app/features/splash_feature/presentation/widgets/splash_view_body.dart';
+import 'package:food_delivery_app/features/splash_feature/presentation/view/widgets/splash_view_body.dart';
 
 class SplashView extends StatelessWidget {
   const SplashView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SplashViewBody();
+    return Scaffold(body: SafeArea(child: SplashViewBody()));
   }
 }

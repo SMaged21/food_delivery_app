@@ -46,30 +46,28 @@ class _SplashViewBodyState extends State<SplashViewBody>
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          FadeTransition(
-            opacity: fadeAnimation1,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [SvgPicture.asset(AppImages.a1)],
-            ),
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        FadeTransition(
+          opacity: fadeAnimation1,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [SvgPicture.asset(AppImages.a1)],
           ),
-          FadeTransition(
-            opacity: fadeAnimation2,
-            child: SvgPicture.asset(AppImages.logo),
+        ),
+        FadeTransition(
+          opacity: fadeAnimation2,
+          child: SvgPicture.asset(AppImages.logo),
+        ),
+        FadeTransition(
+          opacity: fadeAnimation1,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [SvgPicture.asset(AppImages.a2)],
           ),
-          FadeTransition(
-            opacity: fadeAnimation1,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [SvgPicture.asset(AppImages.a2)],
-            ),
-          ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
